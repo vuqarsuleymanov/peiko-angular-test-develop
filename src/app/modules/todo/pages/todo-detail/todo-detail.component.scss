@@ -1,0 +1,35 @@
+.task-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 2px 13px -2px rgba(0,0,0,0.4);
+  padding: 10px;
+  border-radius: 4px;
+  position: relative;
+
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #383838;
+  }
+
+  p {
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    color: #6b6b6b;
+  }
+}
+
+.back-buttton {
+  display: block;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  width: fit-content;
+  padding: 10px;
+  box-shadow: 0 2px 13px -2px rgba(0,0,0,0.4);
+}

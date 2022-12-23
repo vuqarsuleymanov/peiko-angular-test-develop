@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="todo-header">
+    <h2>Todo List</h2>
+    <input #searchInput type="text"/>
+  </div>
+
+  <ng-container *ngIf="filteredTaskList.length > 0">
+    <app-todo-item *ngFor="let task of filteredTaskList" [task]="task" (onDelete)="deleteTask($event)" (onEdit)="editTask($event)" (onDone)="doneTask($event)"></app-todo-item>
+  </ng-container>
+  <ng-container *ngIf="filteredTaskList.length === 0">
+    <h4>Data Not Found</h4>
+  </ng-container>
+</div>

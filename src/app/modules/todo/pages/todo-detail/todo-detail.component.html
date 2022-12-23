@@ -1,0 +1,14 @@
+<div class="container">
+  <a class="back-buttton" routerLink="/todo"><-- Back</a>
+  <div style="color: red" *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
+
+  <div class="task-detail" *ngIf="!errorMessage">
+    <h2>{{task.label}}</h2>
+    <p>{{task.description}}</p>
+    <p>Done: {{task.done}}</p>
+
+    <span class="badge">{{task.category}}</span>
+  </div>
+</div>

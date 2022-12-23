@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #fafafa;
+}
+
+.container {
+  padding: 30px;
+}
+
+.badge {
+  position: absolute;
+  right: 20px;
+  background: #5e9d57;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.btn {
+  //height: 30px;
+  line-height: 10px;
+  width: fit-content;
+  min-width: 100px;
+  padding: 10px 4px;
+  margin-left: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-danger {
+    background: red;
+}
+
+.btn-info {
+  background: orange;
+}
+
+.btn-primary {
+  background: #2faff8;
+}
+
+.is-invalid {
+  border: 1px solid red !important;
+}

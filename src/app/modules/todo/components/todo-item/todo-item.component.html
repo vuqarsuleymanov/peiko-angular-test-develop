@@ -1,0 +1,10 @@
+<div class="task-item">
+  <input type="checkbox" [(ngModel)]="task.done" (change)="doneTask()">
+  <div class="task-info" [routerLink]="['/todo/detail/', task.id]">
+    <h2 [ngStyle]="{'text-decoration': task.done ? 'line-through': ''}">{{task.label}}</h2>
+    <span class="badge">{{task.category}}</span>
+  </div>
+
+  <button  (click)="editTask(task.id)" class="btn btn-info">Edit</button>
+  <button  (click)="deleteTask(task.id)" class="btn btn-danger">Delete</button>
+</div>

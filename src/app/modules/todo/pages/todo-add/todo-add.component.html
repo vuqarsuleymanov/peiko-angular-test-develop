@@ -1,0 +1,27 @@
+<div class="container">
+  <form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Category</label>
+      <select formControlName="category" class="form-control" [ngClass]="{ 'is-invalid': submitted && f['category'].errors }">
+        <option value="">Choose Category</option>
+        <option value="house">House</option>
+        <option value="health">Health</option>
+        <option value="eat">Eat</option>
+        <option value="bureaucracy">Bureaucracy</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Label</label>
+      <input [ngClass]="{ 'is-invalid': submitted && f['label'].errors }" class="form-control" type="text" formControlName="label">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <textarea rows="4" class="form-control" formControlName="description"></textarea>
+    </div>
+
+    <div class="actions">
+      <button routerLink="/todo/list" class="btn btn-danger">Cancel</button>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+</div>
